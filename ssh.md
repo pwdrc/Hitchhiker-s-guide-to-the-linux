@@ -12,4 +12,4 @@ Exit error in *systemctl status ssh.service* is:
 **Failed to start OpenBSD Secure Shell server**
 
 **Common cause:**
-> bad configuration in /etc/ssh/sshd.conf 
+> bad configuration in /etc/ssh/sshd_config 
