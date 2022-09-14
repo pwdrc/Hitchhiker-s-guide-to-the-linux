@@ -13,3 +13,4 @@ Exit error in *systemctl status ssh.service* is:
 
 **Common cause:**
 > bad configuration in /etc/ssh/sshd_config 
+.
