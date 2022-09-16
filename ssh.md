@@ -1,5 +1,14 @@
 # SSH
 
+## Configuration
+
+### SSH Agent (ssh-agent)
+
+#### Git / GitHub
+
+https://stackoverflow.com/questions/60549377/can-we-skip-the-part-about-adding-your-ssh-key-to-the-ssh-agent-but-just-gener
+
+
 ## Troubleshooting
 
 ### Failed to start OpenBSD Secure Shell
