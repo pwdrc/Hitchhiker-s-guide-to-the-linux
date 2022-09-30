@@ -4,9 +4,12 @@
 > e2image -ra -p '/origin/partition' '/copy/partition'
 
 ## Check if disk is HDD or SSD
-> cat /sys/block/<device>/queue/rotational
+> cat /sys/block/\<device\>/queue/rotational
 
-In <device> you should give the name of the disk (sda, sdb, sdc, etc)
+In \<device\> you should give the name of the disk (sda, sdb, sdc, etc)
+
 If the output be:
+
 	1 -> HDD
+	
 	0 -> SSD
