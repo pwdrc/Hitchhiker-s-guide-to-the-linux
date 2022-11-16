@@ -13,3 +13,13 @@ If the output be:
 	1 -> HDD
 	
 	0 -> SSD
+
+## SSD
+
+### S.M.A.R.T
+
+#### Monitoring and testing ssd's health with smartmontools 
+
+> smartctl -a /dev/sdX
+
+
