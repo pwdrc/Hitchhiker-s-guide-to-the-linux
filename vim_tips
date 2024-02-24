@@ -1,0 +1,64 @@
+1. To delete from the cursor up to the next word type:        dw
+2. To delete from the cursor up to the end of the word type:  de
+3. To delete from the cursor to the end of a line type:       d$
+4. To delete a whole line type:                               dd
+
+5. To repeat a motion prepend it with a number:   2w
+6. The format for a change command is:
+               operator   [number]   motion
+   where:
+          operator - is what to do, such as  d  for delete
+          [number] - is an optional count to repeat the motion
+          motion   - moves over the text to operate on, such as  w (word), e (end of word),  $ (end of the line), etc.
+
+7. To move to the start of the line use a zero:  0
+
+8. To undo previous actions, type:           u  (lowercase u)
+   To undo all the changes on a line, type:  U  (capital U)
+   To undo the undos, type:                  CTRL-R
+
+9. Type  ce  to change from the cursor to the end of the word,  c$  to change to the end of a line.
+
+10. CTRL-G:   display your location in the file and the file status
+    G:        moves to the end of the file
+    gg:       moves to the first line
+    number G: moves to the line number
+
+11. /         searches forward
+    ?         searches backward
+    n         next occurrence
+    N         opposite direction
+    CTRL-O    back to older positions
+    CTRL-I    to newer positions
+
+12. %         (,[,{ mathing
+
+13. :s/old/new       substitute in a first old in a line
+    :s/old/new/g     all old in a line
+    :#,#s/old/new/g  between two lines #
+    :$s/old/new/g    all occurrences
+    :$s/old/new/g    all occurrences with asking for confirmation
+
+14. :!command        executes an external command
+    :w fileName      writes the current Vim file to disck with name fileName
+    v motion :w NAME saves selected lines in file NAME
+    :r FILENAME      puts FILENAME below the cursor
+    :r !command      reads the output and puts is below the cursor position
+
+15. o                open a line BELOW 
+    O                open a line ABOVE
+
+16. a                insert AFTER CURSOR
+    A                insert END OF THE LINE
+
+17. e                moves to the end of a word
+
+18. y                yank (copy)
+    p                puts (paste)
+
+19. R                Replace Mode
+
+20. :set ic          ognore upper/lower case
+    :set is          partial matches
+    :set hls         hilight
+    add 'no' to switch off:   :set noic
